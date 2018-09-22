@@ -729,7 +729,7 @@ func (g *nodeJSGenerator) emitNPMPackageMetadata(pack *pkg) error {
 
 	// Create info that will get serialized into an NPM package.json.
 	npminfo := npmPackage{
-		Name:        fmt.Sprintf("@pulumi/%s", pack.name),
+		Name:        fmt.Sprintf("@jaxxstorm/%s", pack.name),
 		Version:     "${VERSION}",
 		Description: g.info.Description,
 		Keywords:    g.info.Keywords,
